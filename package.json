@@ -4,6 +4,7 @@
   "description": "this api is to download the facebook videos",
   "main": "app.js",
   "scripts": {
+    "dev":"nodemon app.js",
     "start": "node app.js"
   },
   "author": "",
@@ -25,6 +26,7 @@
     "social-downloader-cherry": "^1.0.0",
     "tiktok-video-downloader": "^1.0.1",
     "video-url-link": "^0.1.5",
-    "videolinkapi": "^1.0.0"
+    "videolinkapi": "^1.0.0",
+    "vimeo-down-async": "^0.0.25"
   }
 }
