@@ -9,6 +9,6 @@ app.use("/facebook", facebook);
 app.use("/tiktok", tiktok);
 app.use("/instagram", instagram);
 app.use("/vimeo", vimeo);
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Express server listening on port 3000");
 });
