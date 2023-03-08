@@ -9,6 +9,8 @@ router.route("/").post(async (req, res) => {
       message: "success",
       data: {
         url: req.body.url,
+        originalSound:result.backsound.url,
+        nowatermark:result.video.url.no_wm, 
         downloadLink: result.video.url.wm,
       },
     });
