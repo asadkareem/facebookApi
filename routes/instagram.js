@@ -8,7 +8,7 @@ router.route("/").post(async (req, res) => {
     let links = await instagramGetUrl(req.body.url);
     res.status(200).json({
       url: req.body.url,
-      downloadLink: links.url_list,
+      downloadLink: links.url_list[0],
     });
   } catch (err) {
     res.status(404).json({
